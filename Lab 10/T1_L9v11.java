@@ -1,0 +1,33 @@
+import java.util.Scanner ;
+
+public class T1_L9v11 {
+    
+    public static void main ( String [] args ) {
+        
+        Scanner input = new Scanner ( System.in ) ;
+        
+        int [] a = new int [5] ;
+        int v , max;
+        
+        System.out.print ( " Please enter first number : " ) ;
+        a [0] = input.nextInt() ;
+        
+        max = a [0] ; 
+        
+        for ( v = 1 ; v < a.length ; v++ ) {
+            
+            System.out.print ( " Please enter another number : " ) ;
+            a [v] = input.nextInt() ;
+            
+            if ( max < a [v] ) {
+                
+                max = a [v] ;
+                
+            }
+            
+        }
+        
+        System.out.println ( " The largest is : " + max ) ;
+        
+    }
+}
